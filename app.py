@@ -1,11 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_pymongo import pymongo
 from bson.json_util import dumps
-from bson.objectid import ObjectId
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_cors import CORS
-from dotenv import load_dotenv
-import os
 
 app = Flask(__name__)
 
